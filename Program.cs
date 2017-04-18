@@ -23,11 +23,13 @@ namespace webcomic_generator
             NumericComparer ns = new NumericComparer();
             Array.Sort(fileEntries, ns);
 
+            Console.WriteLine("now only support .png .jpg .gif .bmp");
+
             foreach (string fileName in fileEntries)
-            {
-                Console.WriteLine(fileName);
+            {   
                 if (Path.GetExtension(fileName) == ".png" || Path.GetExtension(fileName) == ".jpg" || Path.GetExtension(fileName) == ".gif" || Path.GetExtension(fileName) == ".bmp")
                 {
+                    Console.WriteLine("Added file: " + fileName);
                     files.Add(fileName);
                 }
             }
@@ -39,7 +41,7 @@ namespace webcomic_generator
 
             lines.Add("<script> var img=document.querySelectorAll('img');for(var i=0;i<img.length;i++){img[i].addEventListener('click',function(e){e.stopPropagation(); window.scrollBy(0,this.height/2);});} window.onresize=function(event){var img=document.querySelectorAll('img');for(var i=0;i<img.length;i++){img[i].addEventListener('click',function(e){e.stopPropagation(); window.scrollBy(0,this.height/2);});}}; window.onclick=function(){window.location='#top'}; </script> </body>");
 
-            Console.Write("File Name: ");
+            Console.Write("\n\nFile Name: ");
             String s = Console.ReadLine();
             System.IO.File.WriteAllLines(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location)+"/"+s+".html", lines.ToArray<string>());
         }
