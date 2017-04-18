@@ -1,0 +1,6 @@
+c:\users\mac\documents\visual studio 2015\Projects\webcomic_generator\bin\Debug\webcomic_generator.exe.config
+c:\users\mac\documents\visual studio 2015\Projects\webcomic_generator\obj\Debug\webcomic_generator.csprojResolveAssemblyReference.cache
+c:\users\mac\documents\visual studio 2015\Projects\webcomic_generator\bin\Debug\webcomic_generator.exe
+c:\users\mac\documents\visual studio 2015\Projects\webcomic_generator\bin\Debug\webcomic_generator.pdb
+c:\users\mac\documents\visual studio 2015\Projects\webcomic_generator\obj\Debug\webcomic_generator.exe
+c:\users\mac\documents\visual studio 2015\Projects\webcomic_generator\obj\Debug\webcomic_generator.pdb
